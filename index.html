@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="utf-8" />
+    <title>SENAI - Sistema de Eventos®</title>
+    <link rel="shortcut icon" href="image/iconsenai.ico" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous" />
+    <link rel="stylesheet" type="text/css" href="css/style.css" />
+</head>
+
+<body>
+    <div class="container">
+        <img class="image" src="image/iconsenai.ico" alt="Logo Senai">
+        <form id="loginForm" class="form login-form text-center" action="index.php" method="post">
+            <p>
+                <h2><b class="title"> Sistema de Cadastro de Eventos</b></h2>
+            </p>
+            <h3 class="subtitle"> Login </h3>
+            <div class="login">
+                <div class="usuario">
+                    <input name="email" type="text" id="email" class="form-control" placeholder="Usuário digite o seu e-mail" minlength="1" maxlength="50 " required="">
+                </div>
+                <div class="senha">
+                    <input name="senha" type="password" id="senha" class="form-control" placeholder="Usuário informe sua senha" minlength="6" maxlength="6" required="">
+
+                </div>
+                <div class="checkbox mb-3 ">
+                    <label>
+                      <input type="checkbox" class="form-check-input " value="remember-me" onclick="mostrarOcultarSenha()"> Mostrar a senha </label>
+                </div>
+            </div>
+            <button type="submit" class="btn btn-info "> Entrar </button>
+            <button type="submit" class="btn btn-info " onclick="limparForm()"> Limpar </button>
+            <p class="copyright">
+                Técnico em Informática para Internet - SENAI ®
+            </p>
+        </form>
+    </div>
+    <script>
+        function mostrarOcultarSenha() {
+            var seenha = document.getElementById("senha");
+            if (senha.type == "password") {
+                senha.type = "text"
+            } else {
+                senha.type = "password";
+            }
+        }
+
+        function limparForm() {
+            parent.document.getElementById("loginForm").reset();
+        }
+    </script>
+</body>
+
+</html>
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+
+</body>
+
+</html>
