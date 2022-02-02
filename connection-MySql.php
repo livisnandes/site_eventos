@@ -2,7 +2,7 @@
 $servername = "localhost:3306";
 $database = "Sistema_Evento";
 $user = "root";
-$password = "Senai123";
+$password = "";
 // Create connection
 $conexao = mysqli_connect($servername, $user, $password, $database);
 // Check connection
